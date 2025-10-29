@@ -1,0 +1,162 @@
+:root{
+  --bg-page: #a4a4a5;
+  --card-bg: #c6fdbb;
+  --card-border: #8fbf8f;
+  --input-bg: #ffffff;
+  --btn-color: aquamarine;
+  --btn-text: #000;
+  --btn-radius: 6px;
+  --table-bg: #ffffff;
+  --muted: #666;
+}
+
+* { box-sizing: border-box; }
+body {
+  background-color: var(--bg-page);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px 0 40px 0;
+  color: #111;
+  -webkit-font-smoothing:antialiased;
+}
+
+.bungkus {
+  background-color: var(--card-bg);
+  width: 360px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px dashed var(--card-border);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.bungkus h2 {
+  margin: 0 0 14px 0;
+  font-size: 20px;
+  color: #0a0a0a;
+  font-weight: 700;
+}
+
+.kotak {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.kotak label {
+  display: inline-block;
+  width: 90px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #0f3f2f;
+}
+
+.kotak input[type="text"],
+.kotak input[type="email"],
+.kotak input[type="password"],
+.kotak input[type="number"],
+.kotak textarea,
+.kotak select {
+  flex: 1;
+  width: 100%;
+  max-width: 220px;
+  background-color: var(--input-bg);
+  border-radius: 5px;
+  border: 2px solid #cfcfcf;
+  padding: 6px 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.kotak input:focus,
+.kotak textarea:focus,
+.kotak select:focus {
+  border-color: #7fbfb0;
+  box-shadow: 0 0 0 3px rgba(127,191,176,0.12);
+}
+
+.button,
+.btn {
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: var(--btn-radius);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.button:hover,
+.btn:hover,
+.button:focus,
+.btn:focus {
+  filter: brightness(0.95);
+  text-decoration: none;
+  outline: none;
+}
+
+.btn.edit { background: #007bff; }
+.btn.hapus { background: #dc3545; }
+.tambah { display:block; width:190px; margin:18px auto; text-align:center; background:#28a745; color:#fff; padding:10px 0; border-radius:8px; text-decoration:none;}
+
+.btn-group { text-align: center; margin-top: 12px; }
+.note { font-size: 13px; color: var(--muted); margin-top:8px; }
+
+/* Table style — paste / replace bagian table, th, td di st.css */
+
+table {
+  width: 90%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  margin: 24px auto;
+  background: var(--table-bg);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  border: 2px solid #000; /* border luar hitam */
+}
+
+th, td {
+  border: 1px solid #000; /* border setiap cell hitam */
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+  background: #fff;
+}
+
+th {
+  background: #214c3b;   /* header warna gelap */
+  color: #ffffff;       /* teks header putih */
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+}
+
+tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+/* responsive */
+@media (max-width: 720px) {
+  table { width: 96%; font-size: 13px; }
+  th, td { padding: 8px; }
+}
+
+
+a { color: inherit; }
+
+.alert {
+  width: 90%;
+  max-width: 800px;
+  margin: 12px auto;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fff8dc;
+  border: 1px solid #f0e1b8;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
