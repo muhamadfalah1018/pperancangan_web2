@@ -1,0 +1,122 @@
+/* assets/css/login.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Latar Belakang Foto - Pastikan path ini benar */
+    background: url('back.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container, .register-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.login-container h2, .register-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+/* assets/css/login.css */
+
+/* GANTI DEFINISI .logo YANG LAMA */
+.logo {
+    margin-bottom: 20px;
+    text-align: center;
+    /* Tentukan ukuran container logo */
+    width: 100px;
+    height: 100px; 
+    margin: 0 auto 20px; /* Pusatkan div.logo */
+    overflow: hidden; /* Penting untuk menjaga bentuk */
+    border: 3px solid #6A5ACD; /* Opsional: Garis tepi ungu */
+    border-radius: 50%; /* Membuat container bulat */
+}
+
+/* TAMBAHKAN STYLE BARU UNTUK GAMBAR DI DALAMNYA */
+.logo img {
+    width: 100%;    /* Gambar memenuhi lebar container (100px) */
+    height: 100%;   /* Gambar memenuhi tinggi container (100px) */
+    object-fit: cover; /* Penting: Memastikan gambar mengisi area tanpa terdistorsi */
+    border-radius: 50%; /* Membuat gambar bulat */
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5544a8;
+}
+
+.btn-registrasi {
+    background-color: #6A5ACD;
+}
+
+.btn-registrasi:hover {
+    background-color:#6A5ACD;
+}
+
+.error {
+    color: #d9534f;
+    margin-bottom: 15px;
+    background-color: #f2dede;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ebccd1;
+}
+
+.success {
+    color: #5cb85c;
+    margin-bottom: 15px;
+    background-color: #dff0d8;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #d6e9c6;
+}
+
+a {
+    color: #6A5ACD;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
